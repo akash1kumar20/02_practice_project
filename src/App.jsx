@@ -1,9 +1,10 @@
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-import UsersCard from "./components/UsersCard";
+import Navbar from "./components/Navbar";
 import { useState } from "react";
-import UsersPage from "./components/UsersPage";
+import UsersPage from "./pages/UserPage";
+import UsersCard from "./components/UserCard";
 
 function App() {
   const [name, setName] = useState("");
@@ -16,11 +17,12 @@ function App() {
   ]);
   return (
     <>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
 
         <Route
-          path="/users"
+          path="/user"
           element={
             <UsersPage
               name={name}
@@ -32,7 +34,7 @@ function App() {
           }
         />
         <Route
-          path="/users/details"
+          path="/user/details"
           element={<UsersCard userDetails={userDetails} />}
         />
       </Routes>

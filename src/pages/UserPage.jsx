@@ -12,7 +12,7 @@ function UsersPage({ name, email, setName, setEmail, setUserDetails }) {
       },
     ]);
     if (name) {
-      navigate("/users/details");
+      navigate("/user/details");
       setEmail("");
       setName("");
     }

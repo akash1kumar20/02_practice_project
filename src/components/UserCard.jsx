@@ -14,7 +14,7 @@ function UsersCard({ userDetails }) {
           </li>
         ))}
       </ul>
-      <button onClick={() => navigate("/")}>Back</button>
+      <button onClick={() => navigate("/user")}>Back</button>
     </div>
   );
 }

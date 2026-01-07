@@ -11,7 +11,7 @@ function Home() {
         date with the community. Whether you're here to learn or to lead, User
         Hub is where our collective journey happens.
       </p>
-      <button onClick={() => navigate("/users")}>Add User</button>
+      <button onClick={() => navigate("/user")}>Add User</button>
     </>
   );
 }
