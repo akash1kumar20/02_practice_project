@@ -1,0 +1,22 @@
+# Users Explorer (React)
+
+A simple React application that fetches and displays users from a public API.
+
+## Features
+
+- API data fetching using fetch
+- Loading and error handling
+- Reusable components
+- Clean folder structure
+- Client-side routing
+
+## Tech Stack
+
+- React
+- Vite
+- JavaScript
+
+## How to Run
+
+npm install
+npm run dev
