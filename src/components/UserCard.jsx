@@ -1,22 +1,13 @@
-import { useNavigate } from "react-router-dom";
-
-function UsersCard({ userDetails }) {
-  const navigate = useNavigate();
-
+function UserCard({ user }) {
   return (
-    <div>
-      <h3>Users Details are mentioned below:</h3>
-      <ul>
-        {userDetails.map((user) => (
-          <li key={user.name}>
-            Name : {user.name.toUpperCase()} & Email :{" "}
-            {user.email.toUpperCase()}
-          </li>
-        ))}
-      </ul>
-      <button onClick={() => navigate("/user")}>Back</button>
+    <div
+      style={{ border: "1px solid #ccc", padding: "10px", margin: "10px 0" }}
+    >
+      <h3>{user.name}</h3>
+      <p>Email: {user.email}</p>
+      <p>City: {user.address.city}</p>
     </div>
   );
 }
 
-export default UsersCard;
+export default UserCard;
